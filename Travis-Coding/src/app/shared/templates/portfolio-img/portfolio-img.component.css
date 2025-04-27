@@ -1,0 +1,14 @@
+.img-wrapper {
+  height: 10em;
+  width: 10em;
+  border-radius: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 0%;
+}

@@ -1,0 +1,16 @@
+<main>
+  <section class="dashboard-wrapper">
+    <article>
+      @for (c of column.split(' '); track c) { @for (c2 of c; track c2) {
+      <span class="side-letters">{{ c2 }}</span>
+      }
+      <br />
+      }
+    </article>
+    <aside>
+      <app-navbar />
+      <app-footer />
+    </aside>
+    <router-outlet />
+  </section>
+</main>

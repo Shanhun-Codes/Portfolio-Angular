@@ -1,0 +1,15 @@
+.icon-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icon-ul li {
+  margin: 0.5em;
+}
+
+.icon {
+  color: #000;
+  opacity: 0.8;
+  font-size: 1.25em;
+}
