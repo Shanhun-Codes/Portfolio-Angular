@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from '../shared/templates/navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '../shared/templates/footer/footer.component';
+import { HeaderComponent } from "../shared/templates/header/header.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -11,5 +12,5 @@ import { FooterComponent } from '../shared/templates/footer/footer.component';
   styleUrl: './dashboard.component.css',
 })
 export class DashboardComponent {
-  column: string = 'Software Engineer - Educator - Fullstack ';
+  column: string = 'Software Engineer - Educator - Full-Stack';
 }

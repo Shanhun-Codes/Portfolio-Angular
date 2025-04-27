@@ -1,16 +1,25 @@
 <footer>
-  <p>shanhun.codes&#64;gmail.com</p>
+  <a class="copy-me" (click)="copyToClipboardHandler()">{{ currentEmail }}</a>
   <ul class="icon-ul">
     <li>
-      <a href="https://github.com/Shanhun-Codes" target="_blank">
-        <i class="icon fab fa-github"></i>
+      <a
+        href="https://github.com/Shanhun-Codes"
+        target="_blank"
+        class="icon fab fa-github"
+      >
       </a>
     </li>
 
     <li>
-      <a href="" target="_blank">
-        <i class="icon fab fa-linkedin linkedin-icon"></i>
+      <a
+        href="https://www.linkedin.com/in/travis-shanhun-4340b62a1/"
+        target="_blank"
+        class="icon fab fa-linkedin linkedin-icon"
+      >
       </a>
     </li>
   </ul>
+
 </footer>
+<!-- Add this in your component's HTML template -->
+<div id="copiedMessage" class="copied-message">Copied!</div>

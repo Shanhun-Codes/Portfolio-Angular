@@ -1,16 +1,21 @@
 <main>
+  <!-- <app-header /> -->
   <section class="dashboard-wrapper">
     <article>
-      @for (c of column.split(' '); track c) { @for (c2 of c; track c2) {
-      <span class="side-letters">{{ c2 }}</span>
-      }
-      <br />
-      }
+      <div class="side-letter-wrapper">
+        @for (c of column.split(' '); track $index) { @for (c2 of c; track $index) {
+        <span class="side-letters">{{ c2 }}</span>
+        } @if ($index < column.split(' ').length - 1) {
+        <span class="side-space">&nbsp;</span>
+        } }
+      </div>
     </article>
     <aside>
       <app-navbar />
       <app-footer />
     </aside>
-    <router-outlet />
+    <div class="pages-container">
+      <router-outlet />
+    </div>
   </section>
 </main>
