@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "Travis-Coding/dist/travis-coding/browser",
+            "outputPath": "dist/travis-coding/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
