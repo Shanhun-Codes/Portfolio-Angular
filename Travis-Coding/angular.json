@@ -16,7 +16,9 @@
             "outputPath": "Travis-Coding/dist/travis-coding/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -72,7 +74,10 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
@@ -85,6 +90,14 @@
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "Travis-Coding/dist/travis-coding/browser",
+            "netlifyToken": "nfp_9mScLVKEsZDDmjhghvHCqxUEP7bFtYHN85e1",
+            "siteId": "13d24950-2cb5-492e-9adb-cb874b9fce49"
           }
         }
       }
