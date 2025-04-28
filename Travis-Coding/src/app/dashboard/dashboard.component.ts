@@ -27,7 +27,7 @@ export class DashboardComponent {
 
   setColumnText() {
     if (this.windowWidth < 600) {
-      this.column = 'Travis Shanhun | Travis Shanhun | Travis Shanhun';
+      this.column = 'Travis Shanhun | Software Engineer | Travis Shanhun';
     } else {
       this.column = 'Software Engineer - Educator - Full-Stack';
     }
