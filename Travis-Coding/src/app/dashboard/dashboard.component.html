@@ -1,12 +1,12 @@
 <main>
   @if (windowWidth < 600) {
-    <app-header />
-
+  <app-header />
   }
   <section class="dashboard-wrapper">
     <article>
       <div class="side-letter-wrapper">
-        @for (c of column.split(' '); track $index) { @for (c2 of c; track $index) {
+        @for (c of column.split(' '); track $index) { @for (c2 of c; track
+        $index) {
         <span class="side-letters">{{ c2 }}</span>
         } @if ($index < column.split(' ').length - 1) {
         <span class="side-space">&nbsp;</span>
@@ -22,7 +22,7 @@
     </div>
   </section>
   @if (windowWidth < 600) {
-   <app-footer />
+  <app-footer />
 
   }
 </main>
