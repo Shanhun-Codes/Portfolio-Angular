@@ -1,5 +1,8 @@
 <main>
-  <!-- <app-header /> -->
+  @if (windowWidth < 600) {
+    <app-header />
+
+  }
   <section class="dashboard-wrapper">
     <article>
       <div class="side-letter-wrapper">
@@ -18,4 +21,8 @@
       <router-outlet />
     </div>
   </section>
+  @if (windowWidth < 600) {
+   <app-footer />
+
+  }
 </main>

@@ -41,8 +41,22 @@ footer {
   margin-top: auto;
 }
 
-
 .pages-container {
-    margin: 2em;
+  margin: 2em;
 }
 
+@media (max-width: 600px) {
+  article {
+    font-size: 1em;
+    margin: 1em 0 0 1em;
+    justify-content: flex-start;
+  }
+
+  .pages-container {
+    margin: 1em;
+  }
+
+  aside {
+    display: none;
+  }
+}
