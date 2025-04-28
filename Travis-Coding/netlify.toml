@@ -1,6 +1,7 @@
 [build]
-publish = "Travis-Coding/dist/travis-coding/browser/browser"
+publish = "dist/travis-coding/browser"
 command = "ng build --configuration production"
+
 
 [[redirects]]
 from = "/*"
