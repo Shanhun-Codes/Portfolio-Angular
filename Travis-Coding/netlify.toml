@@ -1,6 +1,8 @@
 [build]
+node_version = "18"
 publish = "dist/travis-coding/browser"
 command = "ng build --configuration production"
+
 
 
 [[redirects]]
