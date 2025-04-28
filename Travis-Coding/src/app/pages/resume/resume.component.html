@@ -1,1 +1,20 @@
-<p>resume works!</p>
+<section>
+  <h2>TECH STACK</h2>
+  <nav>
+    <ul>
+      <li>
+        <a [routerLink]="['/resume', 'languages']" routerLinkActive="active">Languages</a>
+      </li>
+      <li>
+        <a [routerLink]="['/resume', 'frameworks']" routerLinkActive="active">Frameworks</a>
+      </li>
+      <li>
+        <a [routerLink]="['/resume', 'tools']" routerLinkActive="active">Tools</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="page-wrapper">
+      <router-outlet />
+  </div>
+  <button (click)="downloadResumeHandler()" >Download Resume</button>
+</section>

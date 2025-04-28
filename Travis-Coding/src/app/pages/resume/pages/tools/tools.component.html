@@ -1,0 +1,5 @@
+<div class="card-wrapper">
+    @for (t of toolsData; track t) {
+    <app-resume-card [name]="t.name" [imgPath]="t.imgPath" />
+    }
+  </div>

@@ -24,8 +24,3 @@ li {
   font-size: 1.25em;
   margin-bottom: 0.5em;
 }
-
-a:hover {
-  text-decoration: underline;
-  color: #3FB8AF
-}

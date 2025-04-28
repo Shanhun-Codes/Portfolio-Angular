@@ -1,0 +1,5 @@
+<div class="card-wrapper">
+@for (l of languages; track l) {
+  <app-resume-card [name]="l.name" [imgPath]="l.imgPath" />
+}
+</div>
