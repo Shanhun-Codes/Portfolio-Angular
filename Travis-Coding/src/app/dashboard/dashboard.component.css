@@ -46,10 +46,12 @@ footer {
 }
 
 @media (max-width: 600px) {
+
   article {
     font-size: 1em;
     margin: 1em 0 0 1em;
     justify-content: flex-start;
+    
   }
 
   .pages-container {

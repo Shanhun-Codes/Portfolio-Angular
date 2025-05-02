@@ -1,0 +1,31 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  header img {
+    min-width: 400px;
+    max-height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  nav {
+    margin-top: 1em;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  li a {
+    text-align: center;
+  }
+
+  
