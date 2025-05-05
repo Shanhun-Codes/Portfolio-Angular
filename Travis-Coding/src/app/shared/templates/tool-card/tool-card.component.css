@@ -1,0 +1,41 @@
+.tool-card {
+    border-radius: 1em ;
+    text-align: center;
+    margin: 1em;
+}
+
+.tool-card img {
+    width: 10em;
+    height: 10em;
+    border-radius: 2em;
+    object-fit: cover;
+    -webkit-user-drag: none;
+    border: 2px solid #3fb8af;
+    filter: drop-shadow(0 0 6px #3fb8af);
+
+}
+
+.tool-card--small {
+    width: 2em !important;
+    height: 2em !important;
+    margin: 0.2em !important;
+    border-radius: 0.5em !important;
+  }
+  
+  .tool-card--small img {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0.3em !important;
+    object-fit: contain !important;
+    border: 1px solid #3fb8af !important;
+    filter: drop-shadow(0 0 4px #3fb8af) !important;
+  }
+  
+
+@media (max-width: 600px) {
+    .tool-card img {
+        width: 5em;
+        height: 5em;
+    }
+}
+

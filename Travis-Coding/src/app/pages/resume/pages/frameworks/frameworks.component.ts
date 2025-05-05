@@ -1,11 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { TechStackService } from '../../../../shared/services/techStack.service';
-import { ResumeCardComponent } from '../../shared/templates/resume-card/resume-card.component';
+import { ToolCardComponent } from '../../../../shared/templates/tool-card/tool-card.component';
+import { ToolsComponent } from "../tools/tools.component";
+import { CardGroupComponent } from "../../../../shared/templates/card-group/card-group.component";
 
 @Component({
   selector: 'app-frameworks',
   standalone: true,
-  imports: [ResumeCardComponent],
+  imports: [ToolCardComponent, ToolsComponent, CardGroupComponent],
   templateUrl: './frameworks.component.html',
   styleUrl: './frameworks.component.css'
 })

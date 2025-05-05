@@ -3,5 +3,34 @@ section {
 }
 
 header {
-    display: block;
+   text-align: center;
 }
+
+
+.masonry-grid {
+    column-count: 1;
+    column-gap: 1rem;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 751px) {
+    .masonry-grid {
+      column-count: 2;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .masonry-grid {
+      column-count: 3;
+    }
+  }
+  
+  
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  
+  

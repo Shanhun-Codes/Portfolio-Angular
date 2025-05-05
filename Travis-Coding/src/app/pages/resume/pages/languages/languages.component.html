@@ -1,5 +1,8 @@
-<div class="card-wrapper">
-@for (l of languages; track l) {
-  <app-resume-card [name]="l.name" [imgPath]="l.imgPath" />
-}
-</div>
+<app-card-group>
+  @for (l of languages; track l) {
+  <div class="card-item">
+    <h3>{{ l.name }}</h3>
+    <app-tool-card [imgPath]="l.imgPath" />
+  </div>
+  }
+</app-card-group>

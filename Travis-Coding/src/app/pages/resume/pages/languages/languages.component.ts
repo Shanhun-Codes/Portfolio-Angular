@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { TechStackService } from '../../../../shared/services/techStack.service';
 import TechStack from '../../../../shared/models/techStack.model';
-import { ResumeCardComponent } from '../../shared/templates/resume-card/resume-card.component';
+import { ToolCardComponent } from '../../../../shared/templates/tool-card/tool-card.component';
+import { CardGroupComponent } from "../../../../shared/templates/card-group/card-group.component";
 
 @Component({
   selector: 'app-languages',
   standalone: true,
-  imports: [ResumeCardComponent],
+  imports: [ToolCardComponent, CardGroupComponent],
   templateUrl: './languages.component.html',
   styleUrl: './languages.component.css'
 })

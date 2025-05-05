@@ -1,11 +1,18 @@
-<section>
+<section class="page-wrapper">
     <header>
-        <app-portfolio-header />
+      <app-portfolio-header />
     </header>
-    <nav>
-
-    </nav>
-    <div class="page-wrapper">
-        <router-outlet />
+  
+    <div class="masonry-grid">
+        @for (p of projects(); track $index) {
+            <div class="masonry-item" >
+              <app-project-card
+                [p]="p"
+                [isActive]="activeProjectId === $index"
+                (toggle)="setActiveProject($index)"
+              ></app-project-card>
+            </div>
+        }
     </div>
   </section>
+  

@@ -1,0 +1,39 @@
+<article
+  class="card-wrapper"
+  [class.visible]="isActive()"
+  (click)="toggle.emit()"
+>
+  <div class="image-wrapper" [class.visible]="isActive()">
+    <img [src]="p()?.imageUrl" alt="" />
+  </div>
+
+  <div class="details-wrapper">
+    <h2>{{ p()?.title }}</h2>
+    <p>{{ p()?.description }}</p>
+
+    <div class="links-wrapper">
+      <ul class="icon-ul">
+        <li>
+          <a
+            [href]="p()!.githubUrl"
+            target="_blank"
+            class="icon fab fa-github"
+          ></a>
+        </li>
+        <li>
+          <a
+            [href]="p()?.liveDemoUrl"
+            target="_blank"
+            class="icon fas fa-globe"
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="framework-wrapper">
+      @for (t of techStack; track $index) {
+        <app-tool-card size="small" [imgPath]="t.imgPath" />
+      }
+    </div>
+  </div>
+</article>

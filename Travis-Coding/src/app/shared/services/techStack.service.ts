@@ -25,4 +25,5 @@ export class TechStackService {
       a.name.localeCompare(b.name)
     );
   }
+
 }

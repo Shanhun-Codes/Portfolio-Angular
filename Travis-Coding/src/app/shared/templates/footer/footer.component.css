@@ -2,20 +2,6 @@ footer{
     text-align: center;
 }
 
-.icon-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.icon-ul li {
-  margin: 0.5em;
-}
-
-.icon {
-  opacity: 0.8;
-  font-size: 1.25em;
-}
 
 /* Add these styles to your component's CSS */
 .copied-message {

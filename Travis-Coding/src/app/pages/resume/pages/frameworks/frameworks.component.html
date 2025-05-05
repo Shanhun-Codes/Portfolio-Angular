@@ -1,5 +1,8 @@
-<div class="card-wrapper">
+<app-card-group>
   @for (f of frameworkData; track f) {
-  <app-resume-card [name]="f.name" [imgPath]="f.imgPath" />
+  <div class="card-item">
+    <h3>{{ f.name }}</h3>
+    <app-tool-card [imgPath]="f.imgPath" />
+  </div>
   }
-</div>
+</app-card-group>

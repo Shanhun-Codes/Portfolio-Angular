@@ -33,6 +33,7 @@ a:hover,
 a.active {
   color: #3fb8af;
   text-decoration: underline;
+  
 }
 
 button {
@@ -52,4 +53,23 @@ button {
 button:hover {
   background-position: 100% 50%;
   background-size: 200% 200%;
+}
+
+.icon-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icon-ul li {
+  margin: 0.5em;
+}
+
+.icon {
+  opacity: 0.8;
+  font-size: 1.25em;
+}
+
+.icon:hover {
+  text-decoration: none;
 }
