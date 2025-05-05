@@ -13,7 +13,7 @@ header {
     padding: 1rem;
   }
   
-  @media (min-width: 751px) {
+  @media (min-width: 771px) {
     .masonry-grid {
       column-count: 2;
     }
