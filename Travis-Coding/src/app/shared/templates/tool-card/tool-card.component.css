@@ -1,12 +1,12 @@
 .tool-card {
     border-radius: 1em ;
     text-align: center;
-    margin: 1em;
+    margin: .5em;
 }
 
 .tool-card img {
-    width: 10em;
-    height: 10em;
+    width: 5em;
+    height: 5em;
     border-radius: 2em;
     object-fit: cover;
     -webkit-user-drag: none;
@@ -31,11 +31,4 @@
     filter: drop-shadow(0 0 4px #3fb8af) !important;
   }
   
-
-@media (max-width: 600px) {
-    .tool-card img {
-        width: 5em;
-        height: 5em;
-    }
-}
 

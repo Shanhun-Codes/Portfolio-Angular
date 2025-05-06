@@ -16,7 +16,11 @@ h2,
 h3,
 h4,
 h5 {
-  color: #e6edf3;
+  
+    color: #3fb8af;
+    font-weight: lighter;
+    font-size: 2em;
+  
 }
 
 ul {
