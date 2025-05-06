@@ -1,9 +1,9 @@
 <footer>
-  <a class="copy-me" (click)="copyToClipboardHandler()">{{ currentEmail }}</a>
+  <a class="copy-me" (click)="copyToClipboardHandler()">{{ user()!.email }}</a>
   <ul class="icon-ul">
     <li>
       <a
-        href="https://github.com/Shanhun-Codes"
+        [href]="user()!.githubUrl"
         target="_blank"
         class="icon fab fa-github"
       >
@@ -12,7 +12,7 @@
 
     <li>
       <a
-        href="https://www.linkedin.com/in/travis-shanhun-4340b62a1/"
+        [href]="user()!.linkedinUrl"
         target="_blank"
         class="icon fab fa-linkedin linkedin-icon"
       >

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,11 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css',
 })
 export class FooterComponent {
-  currentEmail: string = 'shanhun.codes@gmail.com';
+  userService = inject(UserService)
+  user = this.userService.user;
 
   copyToClipboardHandler() {
     navigator.clipboard
-      .writeText(this.currentEmail)
+      .writeText(this.user().email)
       .then(() => this.showCopiedAnimation())
       .catch((e) => alert('Failed to copy please try again'));
   }

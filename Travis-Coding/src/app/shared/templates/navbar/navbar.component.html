@@ -1,15 +1,15 @@
 <section class="navbar-wrapper">
   <app-portfolio-img />
-  <h1 class="heading">Travis Shanhun</h1>
+  <h1 class="heading">{{user()!.name}}</h1>
   <ul>
     <li>
       <a routerLink="/about" routerLinkActive="active">About</a>
     </li>
     <li>
-      <a routerLink="/portfolio" routerLinkActive="active"> Portfolio </a>
+      <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
     </li>
     <li>
-      <a routerLink="/resume" routerLinkActive="active"> Resume </a>
+      <a routerLink="/resume" routerLinkActive="active">Resume</a>
     </li>
   </ul>
 </section>
