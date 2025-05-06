@@ -19,10 +19,9 @@
     </aside>
     <div class="pages-container">
       <router-outlet />
+      @if (windowWidth < 600) {
+      <app-footer />
+      }
     </div>
   </section>
-  @if (windowWidth < 600) {
-  <app-footer />
-
-  }
 </main>
