@@ -32,7 +32,7 @@
 
     <div class="framework-wrapper">
       @for (t of techStack; track $index) {
-        <app-tool-card size="small" [imgPath]="t.imgPath" />
+        <app-tool-card size="small" [imgPath]="t.imgPath" [name]="t.name"/>
       }
     </div>
   </div>

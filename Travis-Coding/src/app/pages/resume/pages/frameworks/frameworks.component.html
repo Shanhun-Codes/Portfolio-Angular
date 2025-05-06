@@ -2,7 +2,7 @@
   @for (f of frameworkData; track f) {
   <div class="card-item">
     <h3>{{ f.name }}</h3>
-    <app-tool-card [imgPath]="f.imgPath" />
+    <app-tool-card [imgPath]="f.imgPath" [name]="f.name" />
   </div>
   }
 </app-card-group>

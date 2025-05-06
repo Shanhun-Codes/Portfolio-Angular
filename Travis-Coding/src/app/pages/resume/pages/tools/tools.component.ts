@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { TechStackService } from '../../../../shared/services/techStack.service';
 import { ToolCardComponent } from '../../../../shared/templates/tool-card/tool-card.component';
-import { CardGroupComponent } from "../../../../shared/templates/card-group/card-group.component";
+import { CardGroupComponent } from "../../../../shared/templates/ng-content/card-group/card-group.component";
 
 @Component({
   selector: 'app-tools',

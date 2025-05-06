@@ -11,4 +11,5 @@ import TechStack from '../../models/techStack.model';
 export class ToolCardComponent {
 size = input<'small' | 'default'>('default');
 imgPath = input<string>()
+name = input()
 }

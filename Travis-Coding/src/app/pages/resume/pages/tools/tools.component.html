@@ -2,7 +2,7 @@
     @for (t of toolsData; track t) {
       <div class="card-item">
         <h3>{{t.name}}</h3>
-        <app-tool-card [imgPath]="t.imgPath" />
+        <app-tool-card [imgPath]="t.imgPath" [name]="t.name"/>
       </div>
     }
   </app-card-group>
