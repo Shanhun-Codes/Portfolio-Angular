@@ -1,7 +1,6 @@
 main {
   border-radius: 1em;
   max-height: 900px;
-  overflow: hidden;
 }
 
 .dashboard-wrapper {

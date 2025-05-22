@@ -4,7 +4,7 @@
   (click)="toggle.emit()"
 >
   <div class="image-wrapper" [class.visible]="isActive()">
-    <img [src]="p()?.imageUrl" alt="" />
+    <img [src]="randomImg()" alt="" />
   </div>
 
   <div class="details-wrapper">
@@ -32,7 +32,7 @@
 
     <div class="framework-wrapper">
       @for (t of techStack; track $index) {
-        <app-tool-card size="small" [imgPath]="t.imgPath" [name]="t.name"/>
+      <app-tool-card size="small" [imgPath]="t.imgPath" [name]="t.name" />
       }
     </div>
   </div>

@@ -1,5 +1,5 @@
-import { inject, Injectable, OnInit, signal } from '@angular/core';
-import PROJECT_DATA from '../data/project';
+import { inject, Injectable, signal } from '@angular/core';
+import PROJECT_DATA from '../staticData/projects';
 import { Project } from '../models/project.model';
 import { TechStackService } from './techStack.service';
 

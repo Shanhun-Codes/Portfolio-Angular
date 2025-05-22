@@ -1,3 +1,5 @@
+@import './partials/_typography.css';
+
 /* You can add global styles to this file, and also import other style files */
 html,
 body {
@@ -11,17 +13,6 @@ body {
   color: #c9d1d9;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  
-    color: #3fb8af;
-    font-weight: lighter;
-    font-size: 2em;
-  
-}
 
 ul {
   list-style-type: none;

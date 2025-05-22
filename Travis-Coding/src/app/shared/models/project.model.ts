@@ -2,8 +2,8 @@ export interface Project {
     title: string;
     description: string;
     technologies: string[]; 
-    imageUrl: string;
-    githubUrl?: string;
-    liveDemoUrl?: string;
+    imageUrls: string[];
+    githubUrl: string;
+    liveDemoUrl: string;
     isFeatured?: boolean; 
   }

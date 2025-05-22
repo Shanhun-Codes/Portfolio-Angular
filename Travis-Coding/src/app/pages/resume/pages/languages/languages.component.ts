@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { TechStackService } from '../../../../shared/services/techStack.service';
-import TechStack from '../../../../shared/models/techStack.model';
+import {TechItem} from '../../../../shared/models/techItem.model';
 import { ToolCardComponent } from '../../../../shared/templates/tool-card/tool-card.component';
 import { CardGroupComponent } from "../../../../shared/templates/ng-content/card-group/card-group.component";
 
@@ -14,5 +14,5 @@ import { CardGroupComponent } from "../../../../shared/templates/ng-content/card
 export class LanguagesComponent {
 techStackService = inject(TechStackService)
 
-languages: TechStack['languages'] = this.techStackService.getLanguages()
+languages: TechItem[] = this.techStackService.getLanguages()
 }

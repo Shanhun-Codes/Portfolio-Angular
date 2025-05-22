@@ -13,17 +13,12 @@ header {
     padding: 1rem;
   }
   
-  @media (min-width: 771px) {
+  @media (min-width: 950px) {
     .masonry-grid {
       column-count: 2;
     }
   }
-  
-  @media (min-width: 900px) {
-    .masonry-grid {
-      column-count: 3;
-    }
-  }
+
   
   
   .masonry-item {
